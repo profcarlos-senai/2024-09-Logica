@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs em Duas Colunas</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px; /* Espaçamento entre as colunas */
+            padding: 20px;
+        }
+
+        .item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box; /* Para incluir padding no cálculo */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est porro minima alias cupiditate magni consequatur sit voluptates commodi, illum asperiores recusandae? Explicabo exercitationem commodi pariatur fuga, consequuntur soluta cum? Provident.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est porro minima alias cupiditate magni consequatur sit voluptates commodi, illum asperiores recusandae? Explicabo exercitationem commodi pariatur fuga, consequuntur soluta cum? Provident.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est porro minima alias cupiditate magni consequatur sit voluptates commodi, illum asperiores recusandae? Explicabo exercitationem commodi pariatur fuga, consequuntur soluta cum? Provident.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est porro minima alias cupiditate magni consequatur sit voluptates commodi, illum asperiores recusandae? Explicabo exercitationem commodi pariatur fuga, consequuntur soluta cum? Provident.</div>
+
+    </div>
+</body>
+</html>

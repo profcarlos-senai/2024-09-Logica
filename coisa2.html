@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs em Duas Colunas</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            margin: 0; /* Margem zero */
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .item {
+            background-color: #4CAF50;
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            width: calc(50% - 20px); /* Ajuste para margem */
+            box-sizing: border-box; /* Para incluir padding e margin no cálculo */
+        }
+        .sozinho{
+            grid-column: span 2; /* Faz a div ocupar duas colunas */
+            background-color: #4CAF50;
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            width: 100%
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Meu Cabeçalho</h1>
+    </header>
+    <div class="container">
+            
+            <h2>Saiba mais sobre mim</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias molestiae maxime sed ex placeat, in corporis quia maiores magni illo perspiciatis saepe fugit, provident a architecto obcaecati eligendi rem quas.</p>
+        </div>
+        <div class="item">
+            <h2>Experiência</h2>
+            <div class="coisa">
+                <h3>Blabla bla bla</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias molestiae maxime sed ex placeat, in corporis quia maiores magni illo perspiciatis saepe fugit, provident a architecto obcaecati eligendi rem quas.</p>
+            </div>
+            <div class="coisa">
+                <h3>Blabla bla bla</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias molestiae maxime sed ex placeat, in corporis quia maiores magni illo perspiciatis saepe fugit, provident a architecto obcaecati eligendi rem quas.</p>
+            </div>
+        </div>
+        <div class="item">
+            <h2>Formação</h2>
+            <div class="coisa">
+                <h3>Blabla bla bla</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias molestiae maxime sed ex placeat, in corporis quia maiores magni illo perspiciatis saepe fugit, provident a architecto obcaecati eligendi rem quas.</p>
+            </div>
+            <div class="coisa">
+                <h3>Blabla bla bla</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias molestiae maxime sed ex placeat, in corporis quia maiores magni illo perspiciatis saepe fugit, provident a architecto obcaecati eligendi rem quas.</p>
+            </div>
+        </div>
+        <div class="item">
+            <h2>Interesses</h2>
+            <ul>
+                <li>asdfg çlkjh</li>
+                <li>asdfg çlkjh</li>
+                <li>asdfg çlkjh</li>
+                <li>asdfg çlkjh</li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2>Idiomas</h2>
+            <ul>
+                <li>asdfg çlkjh</li>
+                <li>asdfg çlkjh</li>
+                <li>asdfg çlkjh</li>
+                <li>asdfg çlkjh</li>
+            </ul>            
+        </div>
+
+    </div>
+</body>
+</html>
